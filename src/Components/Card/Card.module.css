@@ -1,0 +1,28 @@
+.card {
+  border-radius: 5px;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px white;
+}
+
+.button {
+  padding: 10px 40px;
+  margin: 0 auto;
+  display: grid;
+  cursor: pointer;
+  font-size: bold;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+}

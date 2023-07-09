@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "image": "https://img.freepik.com/free-photo/cheerful-woman-in-jeans-hat-and-sunglasses-smiling-to-camera_171337-12136.jpg?w=900&t=st=1688741530~exp=1688742130~hmac=d617e5fca49ba60126825156f8638c2d55b217b907a69d131ab5f4eb00210835",
+      "name": "jeans-42",
+      "page": "items",
+      "description": "Светлые джинсы – это вечная классика, которая никогда не выходит из моды. Их светлый и нежный оттенок делает их универсальными и легко сочетаемыми с различными верхами и обувью. Они мгновенно придают образу свежести и акцентируют внимание на ногах. Светлые джинсы могут быть как строгими и деловыми, так и расслабленными и повседневными, в зависимости от выбора аксессуаров и стиля верхней одежды. Будьте стильны и комфортны в светлых джинсах на любое время года."
+    },
+    {
+      "id": 2,
+      "image": "https://img.freepik.com/free-photo/young-positive-woman-looking_171337-11952.jpg?w=900&t=st=1688741577~exp=1688742177~hmac=c86d4515dab725c506395fdfc485a326de3ff3bdb3835378a70fdeb8d321bb52",
+      "name": "jeans-522",
+      "page": "items",
+      "description": "Светлые джинсы – это модный и стильный выбор для любого сезона. Их светлая и яркая оттеночность придает образу легкости и непринужденности. Сочетайте их с яркими топами или пастельными оттенками для создания яркого и модного лука. Светлые джинсы идеально подходят для повседневной носки, а их комфортный крой исключает ощущение стеснения и дискомфорта."
+    }
+  ],
+  "users": [
+    {
+      "id": 3,
+      "image": "https://img.freepik.com/free-photo/beautiful-woman-casual-white-sweater-with-crossed-hands-smile_343596-5003.jpg?w=2000&t=st=1688751169~exp=1688751769~hmac=cff132f4283b5f9d77ca2e0afbe808737f7350afb4898cd4be14f6e7af9c8c89",
+      "name": "Irina",
+      "page": "users"
+    },
+    {
+      "id": 4,
+      "image": "https://img.freepik.com/free-photo/happy-bearded-young-man-looks-with-joyful-expression-has-friendly-smile-wears-yellow-sweater-red-hat_295783-1388.jpg?w=2000&t=st=1688749832~exp=1688750432~hmac=4624bd4bdc36454755bc1047e5aea60db5e26bee1becfdf495ecb99a252cf30e",
+      "name": "Petr",
+      "page": "users"
+    }
+  ]
+}

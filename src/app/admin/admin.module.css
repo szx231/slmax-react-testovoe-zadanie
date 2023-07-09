@@ -1,0 +1,31 @@
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.category__title {
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.container {
+  margin-bottom: 20px;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+.wrapper {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 25px;
+}
