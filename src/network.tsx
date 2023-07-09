@@ -21,7 +21,7 @@ export const revalidateData = async (newData: Item) => {
   const { page, id } = newData;
 
   try {
-    const response2 = await fetch(`${BACKEND_URL}/${page}/${id}`, {
+    await fetch(`${BACKEND_URL}/${page}/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -30,14 +30,13 @@ export const revalidateData = async (newData: Item) => {
     });
 
     await fetch(REVALIDATE_API, {
-      method: 'GET',
-
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
+      body: JSON.stringify(newData),
     });
   } catch (error) {
-    // Обработка ошибки запроса
     console.error('Ошибка при отправке данных на сервер', error);
   }
 };

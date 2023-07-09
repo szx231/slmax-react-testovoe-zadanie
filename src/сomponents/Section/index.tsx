@@ -11,7 +11,7 @@ interface SectionProps {
   onEditItemNameChange: (newName: string) => void;
   editItem?: Item | null;
   revalidateData: (item: Item) => void;
-  resetEditItem: () => void;
+  resetEditItem: (item: Item) => void;
 }
 
 export const Section = (props: SectionProps) => {
@@ -36,7 +36,7 @@ export const Section = (props: SectionProps) => {
               <button
                 onClick={() => {
                   revalidateData(editItem);
-                  resetEditItem();
+                  resetEditItem(editItem);
                 }}
                 className={styles.button}
                 type="button"

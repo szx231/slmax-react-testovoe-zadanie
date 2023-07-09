@@ -1,4 +1,4 @@
-import { Card } from '@/Components/Card/Card';
+import { Card } from '@/сomponents/Card/Card';
 import styles from './items.module.css';
 import { GetStaticProps, NextPage } from 'next';
 import { ItemsProps } from '@/types';

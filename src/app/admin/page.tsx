@@ -4,7 +4,7 @@ import styles from './admin.module.css';
 import { useEffect, useState } from 'react';
 import { Item } from '@/types';
 import { getAllItems, getAllUsers } from '@/network';
-import { Section } from '@/Components/Section';
+import { Section } from '@/сomponents/Section';
 import { revalidateData } from '@/network';
 
 export default function Users() {
@@ -40,7 +40,29 @@ export default function Users() {
     setEditItem((prev) => ({ ...prev!, name: newName }));
   };
 
-  const resetEditItem = () => setEditItem(null);
+  const resetEditItem = (editItem: Item) => {
+    const updateState = (stateSetter: React.Dispatch<React.SetStateAction<Item[] | null>>) => {
+      stateSetter((prevItems) => {
+        if (!prevItems) return null;
+
+        const updatedItems = prevItems.map((item) => {
+          if (item.id === editItem.id) {
+            return editItem;
+          }
+          return item;
+        });
+        return updatedItems;
+      });
+    };
+
+    if (editItem.page === 'items') {
+      updateState(setItems);
+    } else if (editItem.page === 'users') {
+      updateState(setUsers);
+    }
+
+    setEditItem(null);
+  };
 
   if (loading) {
     return <div>loading...</div>;
