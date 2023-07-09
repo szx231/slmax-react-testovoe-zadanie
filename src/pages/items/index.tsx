@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import { Card } from '@/сomponents/Card/Card';
 import styles from './items.module.css';
 import { GetStaticProps, NextPage } from 'next';
@@ -8,9 +7,6 @@ import { ITEMS_API } from '@/constant';
 const Items: NextPage<ItemsProps> = ({ items }) => {
   return (
     <>
-      <Head>
-        <title>Список товаров</title>
-      </Head>
       <div className={styles.container}>
         {items.map(({ id, image, name }) => {
           return <Card key={id} name={name} imgSrc={image} />;
