@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Card } from '@/сomponents/Card/Card';
 import styles from './users.module.css';
 import { GetStaticProps, NextPage } from 'next';
@@ -7,6 +8,9 @@ import { USERS_API } from '@/constant';
 const Users: NextPage<UsersProps> = ({ users }) => {
   return (
     <>
+      <Head>
+        <title>Список Пользователей</title>
+      </Head>
       <div className={styles.container}>
         {users.map(({ id, image, name }) => {
           return <Card key={id} name={name} imgSrc={image} />;
