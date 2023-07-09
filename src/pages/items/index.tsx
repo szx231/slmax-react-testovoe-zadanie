@@ -5,6 +5,7 @@ import { ItemsProps } from '@/types';
 import { ITEMS_API } from '@/constant';
 
 const Items: NextPage<ItemsProps> = ({ items }) => {
+  console.log('hello wordl!!');
   return (
     <>
       <div className={styles.container}>
